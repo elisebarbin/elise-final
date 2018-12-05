@@ -3,7 +3,6 @@
 
 $body-bg: black;
 $body-color: white;
-$link-hover-color: grey;
 
 
 /* bootstrap */
@@ -61,16 +60,26 @@ h3 {
     font-weight: bold;
 }
 
+
 a {
     color: #6305f0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14pt;
 }
 
+a:hover {
+    color: #6305f0;
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
     padding: 45px;
+  }
+
+  h5 {
+    overflow-wrap: break-all;
+    margin-left: inherit;
   }
   
 

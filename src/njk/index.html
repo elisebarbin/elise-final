@@ -12,9 +12,10 @@
 <h3> Meet the Members </h3>
 <div class="row meet-the-members">
         {% for member in members %}
-              <div class="col-md-3"><a href="{{members.slug}}.html">
-              <div class="card"> 
-                <img class= "card-img-top img-responsive" src="assets/img/members/{{ member.imagebw }}">
+              <div class="col-md-3">
+                <div class="card">
+                <a href={{members.slug}}.html>
+                <img class= "card-img-top img-responsive" src="assets/img/members/{{member.imagebw}}">
                 <div class="card-body">
                   <h5 class="card-title text-center">{{member.name}}</h5>
                   <p class="member-card-text text-center">{{member.instruments}}</p>
