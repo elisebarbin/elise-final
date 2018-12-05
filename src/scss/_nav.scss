@@ -2,26 +2,19 @@
 
 /* The sidebar menu */
 .topnav {
-    height: auto;
-    width: auto; /* Set the width of the sidebar */
-    position: default;/* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
     background-color:black; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    font-size: 36px;
+    font-size: 25pt;
+    padding: 0px 0px 0px;
 }
 
-/* The navigation menu links */
-.topnav a {
-    float: left;
+.nav-item {
     color:white;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 36px;
+    font-family:'Cinzel', serif;
+    font-weight: bold;
+    font-size: 20pt;
+    padding: 0px 40px 40px;
 }
+
 /* When you mouse over the navigation links, change their color */
 .topnav a:hover {
     color: #6305f0;
