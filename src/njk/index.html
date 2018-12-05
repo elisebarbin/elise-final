@@ -12,12 +12,12 @@
 <h3> Meet the Members </h3>
 <div class="row meet-the-members">
         {% for member in members %}
-              <div class="col-md-3"><a href="{{members.slug}}.html" class="card-link">
+              <div class="col-md-3"><a href="{{members.slug}}.html">
               <div class="card"> 
                 <img class= "card-img-top img-responsive" src="assets/img/members/{{ member.imagebw }}">
                 <div class="card-body">
                   <h5 class="card-title text-center">{{member.name}}</h5>
-                  <p class="card-text text-center">{{member.instruments}}</p>
+                  <p class="member-card-text text-center">{{member.instruments}}</p>
               </div>
               </a>
               </p>
@@ -28,14 +28,16 @@
             </div>
 
 <h3> Discography </h3>
-          <ul class="list-unstyled discography">
+          <div class="row discography">
+
         {% for disc in discography%}
-            <li class="media">
-              <img class="img-responsive" src=../assets/img/discs/{{disc.image}}>
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"> {{disc.title}}, {{disc.year}}</h5>
-              </div>
-            </li>
+        <div class="row">
+        <div class="column">
+          <img class="disc-img-card img-responsive" src=../assets/img/discs/{{disc.image}}>
+          <h5 class="disc-title-year text-center"> {{disc.title}}, {{disc.year}}</h5>
+        </div>
+      </div>
+                      
           {% endfor %}
           </ul>
 
