@@ -15,8 +15,8 @@
               <div class="col-md-3">
                 <div class="card">
                 <img class= "card-img-top img-responsive" src="assets/img/members/{{member.imagebw}}">
-                <div class="card-body" ><a href={{member.slug}}.html></a> 
-                  <h5 class="card-title text-center">{{member.name}}</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-center"><a href={{member.slug}}.html>{{member.name}}</h5>
                   <p class="member-card-text text-center">{{member.instruments}}</p> 
               </div>
               </a>
@@ -34,7 +34,8 @@
         <div class="row">
         <div class="column">
           <img class="disc-img-card img-responsive" src=assets/img/discs/{{disc.image}}>
-          <h5 class="disc-title-year text-center"> {{disc.title}}, {{disc.year}}</h5>
+          <h5 class="disc-title text-center"> {{disc.title}}</h5>
+          <h5 class="disc-year text-center"> {{disc.year}}</h5>
         </div>
       </div>
                       
