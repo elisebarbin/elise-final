@@ -1,8 +1,8 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
-$body-bg: black;
-$body-color: white;
+$body-bg: white;
+$body-color: black;
 
 
 /* bootstrap */
@@ -24,7 +24,7 @@ $body-color: white;
 h1 {
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    color: #6305f0;
+    color: black;
 }
 
 h3 {
@@ -48,9 +48,9 @@ h3 {
 
 .card {
     height: 550px;
-    width: 275px;
-    border-width: 5px;
-    border-color: white;
+    width: 270px;
+    border-width: 7px;
+    border-color: black;
     background-color: white;
     margin-bottom: 20px;
 }
@@ -73,7 +73,7 @@ a:hover {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
-    padding: 45px;
+    padding: 40px;
   }
 
   h5 {
@@ -86,9 +86,26 @@ a:hover {
   }
   
   .disc-img-card {
-    border-width: 5px;
-    border-color: white;
-    background-color: white;
+    padding: 10px;
+    background-color:  #6305f0;
     margin-bottom: 10px;
   }
 
+.detail-img {
+    max-height: 35%;
+    max-width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #6305f0;
+}
+
+.detail-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detail-details {
+    text-align: center;
+}

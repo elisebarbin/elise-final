@@ -6,13 +6,17 @@
     <article class="container">
     <div class="row">
     </div>
-    <div class="col-sm-12">
+
     {% block story %}
     {% endblock %}
     {% block info %}
-      <img src="assets/img/members/{{members.image}}">
-      <h1>{{ members.name }}</h1>
-      <h3>{{members.instruments}} {{members.tenure}}</h3>
+      <div class="detail-top col-md-12">
+      <img class="detail-img" src="assets/img/members/{{members.image}}">
+      <h1 class= "detail-name">{{ members.name }}</h1>
+      <h3 class="detail-details">{{members.instruments}} {{members.tenure}}</h3>
+      </div>
+
+    <div class="col-sm-12">
       <p>{{ members.text | safe}}</p>
 
     {% endblock %}
